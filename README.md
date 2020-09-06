@@ -1,2 +1,2 @@
-# react-props-shrunk
+# contact-list-react-props
 Created with CodeSandbox
