@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
-import Contact from "./contacts";
+
 //1. Apply CSS styles to App.jsx component
 //to match the appearance on the completed app:
 //https://c6fkx.csb.app/
@@ -10,4 +10,4 @@ import Contact from "./contacts";
 //so the Card component can be reused for other contacts.
 //4. Import the contacts.js file to create card components.
 
-ReactDOM.render(<App Contact />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

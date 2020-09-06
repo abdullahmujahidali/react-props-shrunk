@@ -3,11 +3,25 @@ import Card from "./Card";
 import Avatar from "./Avatar";
 import contacts from "../contacts";
 
+function createCard(contact) {
+  return (
+    <Card
+      id={contact.id}
+      key={contact.id}
+      name={contact.name}
+      img={contact.imgURL}
+      phone={contact.phone}
+      email={contact.email}
+    />
+  );
+}
+
 function App(props) {
   return (
     <div>
       <Avatar img="https://avatars3.githubusercontent.com/u/48271080?s=400&v=4" />
-      <Card
+      {contacts.map(createCard)};
+      {/* <Card
         name={contacts[0].name}
         img={contacts[0].imgURL}
         phone={contacts[0].phone}
@@ -24,7 +38,7 @@ function App(props) {
         img={contacts[2].imgURL}
         phone={contacts[2].phone}
         email={contacts[2].email}
-      />
+      /> */}
     </div>
   );
 }
